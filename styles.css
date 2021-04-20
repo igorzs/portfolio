@@ -58,7 +58,7 @@ main section {
   padding: 3rem 1rem;
 }
 main section .section-heading {
-  color: #0652dd;
+  color: #15314e;
   margin-bottom: 2rem;
 }
 main section .section-content {
@@ -80,11 +80,11 @@ main section#welcome-section .welcome-img {
 }
 main section#welcome-section .placeholder-background {
   display: none;
-  background-color: #0652dd;
+  background-color: #193b5f;
 }
 main section#welcome-section .greeting {
   color: white;
-  background-color: #0652dd;
+  background-color: rgba(0,72,114,0.9);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,7 +107,8 @@ main section#about .about-img img {
 main section#skills {
   min-height: 500px;
   color: white;
-  background-color: #1b1464;
+  background-color: rgb(25, 59, 95);
+  margin-top:50px;
 }
 main section#skills .section-heading {
   color: white;
@@ -115,6 +116,15 @@ main section#skills .section-heading {
 main section#skills .skill {
   text-align: center;
   margin-top: 3rem;
+  border: 1px solid;
+  border-radius: 27px;
+  padding: 22px;
+  margin: 5px;
+  transition: box-shadow 0.5s;
+}
+
+main section#skills .skill:hover {
+  box-shadow: 0px 0px 16px 6px rgb(255 255 255 / 37%);
 }
 main section#skills .skill i {
   font-size: 3rem;
@@ -296,3 +306,82 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+/*PROFILE IMAGE*/
+.section-profile-img {
+  position: relative;
+}
+
+.border {
+  height: 40px;
+  transition: transform 1s;
+  border-radius: 100%;
+  z-index: -1;
+  -webkit-animation: 2s linear infinite;
+  animation: 4s linear infinite;
+  border-width: 202px;
+  -webkit-animation-name: ubx4b7n;
+  animation-name: ubx4b7n;
+}
+
+@-webkit-keyframes ubx4b7n {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes ubx4b7n {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.dotted {
+  border-style: dotted;
+  border-color: rgb(0 72 114);
+}
+
+.profile-img {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-style: solid;
+  border-color:#15314e;
+  border-radius: 100%;
+  z-index: 9;
+}
+/*PROFILE IMAGE [END]*/
+
+/*SKILLS IMAGES*/
+.php-skill{
+  max-width: 150px;
+}
+
+.html-js-skill{
+  max-width: 180px;
+}
+
+.wordpress-skill{
+  max-width: 105px;
+}
+
+.react-skill{
+  max-width: 190px;
+}
+
+.java-skill{
+  max-width: 130px;
+}
+
+.node-skill{
+  max-width: 210px;
+}
+/*SKILLS IMAGES[END]*/
