@@ -152,7 +152,7 @@ main section#projects .project-tile::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #0652dd;
+  background-color: #15314e;
   opacity: 0;
   transition: all 0.2s ease-in-out;
 }
@@ -385,3 +385,54 @@ footer {
   max-width: 210px;
 }
 /*SKILLS IMAGES[END]*/
+
+/*CSS : FIREFOX */
+@-moz-document url-prefix() { 
+  .border {
+    height: 16px !important;
+    border-radius: 0% !important;
+    border-width: 169px !important;
+    width: 20% !important;
+    margin-left: 14% !important; 
+  }
+}
+/*CSS : FIREFOX [END] */
+
+/*CSS : PROJECTS  */
+.project-tile .project-info{
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 18%;
+}
+
+.project-info{
+  display: none;
+}
+.project-info i{
+  font-size: 50px;
+  margin-bottom: 45px;
+}
+
+.project-name{
+  font-weight: bold;
+}
+
+.project-ling{
+  background-color: #ff8a3d;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 40px;
+}
+
+.project-info i, .project-info p{
+  color: #fff;
+}
+
+.project-tile:hover .project-info{
+  display: block;
+}
+
+/*CSS : PROJECTS [END] */
