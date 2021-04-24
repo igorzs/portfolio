@@ -185,19 +185,6 @@ main section#contact::before {
 main section#contact .section-heading {
   color: white;
 }
-main section#contact #profile-link {
-  padding: 1.5rem 2rem;
-  background-color: #1b1464;
-  font-weight: 800;
-  font-size: 1.2rem;
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: all 0.3s ease-in-out;
-}
-main section#contact #profile-link:hover {
-  background-color: #3225b9;
-}
 
 footer {
   padding: 0.5rem;
@@ -346,11 +333,6 @@ footer a{
   }
 }
 
-.dotted {
-  border-style: dotted;
-  border-color: rgb(0 72 114);
-}
-
 .profile-img {
   position: absolute;
   width: 350px;
@@ -391,63 +373,65 @@ footer a{
 }
 /*SKILLS IMAGES[END]*/
 
-/*CSS : FIREFOX */
-@-moz-document url-prefix() { 
-  .border {
-    height: 16px !important;
-    border-radius: 0% !important;
-    border-width: 169px !important;
-    width: 20% !important;
-    margin-left: 14% !important; 
-  }
-}
-/*CSS : FIREFOX [END] */
-
 /*CSS : PROJECTS  */
-.project-tile .project-info{
+
+.project {
+  position: relative;
+}
+
+.image-project {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.overlay {
   position: absolute;
-  margin: auto;
+  bottom: 0;
   left: 0;
   right: 0;
-  text-align: center;
-  top: 18%;
-}
-
-.project-info{
-  display: none;
-}
-.project-info i{
-  font-size: 50px;
-  margin-bottom: 45px;
-}
-
-.project-name{
-  font-weight: bold;
-}
-
-.project-ling{
   background-color: #ff8a3d;
-  padding: 15px;
-  margin: 5px;
-  border-radius: 40px;
-}
-
-.project-info i, .project-info p{
-  color: #fff;
-}
-
-.project-tile:hover .project-info{
-  display: block;
-}
-
-.project-tile img, #projects .project-tile::before{
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
   border-radius: 10px;
+}
+
+.project:hover .overlay {
+  height: 100%;
+}
+
+.title-project {
+  font-weight: bold;
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.desc-project{
+  position: absolute;
+  top: 60%;
+  text-align: center;
+  left: 50%;
+  color: white;
+  font-size: 20px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 /*CSS : PROJECTS [END] */
 
 /*CSS  : EXPERIENCE SECTION */
 #experience{
+  margin-top:100px;
   padding: 0; 
 }
 
@@ -468,7 +452,7 @@ main section#experience .section-heading{
 }
 
 #experience .section-content{
-  background-color: #15314e;
+  background-color: rgb(25, 59, 95);
   max-width: 100%;
 }
 
@@ -477,3 +461,60 @@ main section#experience .section-heading{
 }
 
 /*CSS  : EXPERIENCE SECTION [END ]*/
+
+/*CSS: BUTTON  */
+.bt-portfolio{
+  box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.bt-portfolio {
+  padding: 1.5rem 2rem;
+  background-color: rgba(0,72,114,0.9);
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.bt-portfolio:hover {
+  background-color: #15314e;
+}
+/*CSS: BUTTON [END]*/
+
+/* CSS:  BT GITHUB PROJECTS*/
+.github-projects{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* CSS:  BT GITHUB PROJECTS [END]*/
+
+/*CSS: CONTACT ME */
+#contact .section-heading{
+  position: absolute;
+  top:25%;
+}
+
+/*CSS: CONTACT ME [END]*/
+
+/*CSS: BT WHATS */
+@keyframes bt-animate {
+  0%   {width: 280px;}
+  100% {width: 300px;}
+}
+
+.bt-whats img{
+  box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.bt-whats{
+  margin-top: 100px;
+  animation-name: bt-animate;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1s;
+}
+/*CSS: BT WHATS [END]*/
