@@ -518,3 +518,46 @@ main section#experience .section-heading{
   animation-duration: 1s;
 }
 /*CSS: BT WHATS [END]*/
+
+/* CSS: SOCIAL NETWORKS */
+.social-networks{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-self: end;
+  text-align: center;
+}
+
+.social-networks a{
+  text-decoration: none;
+  color: #fff;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  font-size: 20px;
+  margin:5px;
+  transition: background-color 0.4s;
+}
+
+.social-networks a:hover{
+  background-color: rgb(43 85 111 / 90%);
+  color: rgb(255 255 255 / 90%);
+  border: 1px solid rgb(255 255 255 / 90%);
+}
+
+.network-linkedin a{
+  padding: 10px 16px;
+}
+
+.network-facebook a{
+  padding: 10px 20px;
+}
+
+.network-instagram a, .network-github a, .network-whatsapp a{
+  padding: 10px 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  .social-networks{
+    align-self: auto;
+  }
+}
+/* CSS: SOCIAL NETWORKS [END] */
