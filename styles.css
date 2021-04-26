@@ -300,12 +300,16 @@ footer a{
 }
 
 /*CSS :MENU WEB/MOBILE */
-#menu-toggle{
+#menu-toggle, .menu-mobile{
   display:none;
 }
 
 @media only screen and (max-width: 600px) {
   #menu-toggle{
+    display:block;
+  }
+
+  .menu-mobile{
     display:block;
   }
 
@@ -587,7 +591,7 @@ main section#experience .section-heading{
 .menu-mobile{
   position: fixed;
   background: rgba(0,72,114,0.9);
-  height: 14%;
+  height: 16%;
   width: 100%;
   z-index: 999;
 }
@@ -598,14 +602,14 @@ main section#experience .section-heading{
 }
 
 #menu-toggle{
-  top: 8px;
+  top: 2%;
   z-index: 999;
   left: 15px;
 }
 
 #menu{
   z-index: 999;
-  top: 10%;
+  top: 8%;
   left: 12px;
   width: 40%;
   background: rgba(0,72,114,0.9);
@@ -676,11 +680,16 @@ main section#experience .section-heading{
 /*CSS: CHANGES MOBILE */
 @media only screen and (max-width: 600px) {
   .section-profile-img{
-    margin: 45% 0% 70% 0%;
+    margin: 160px 0px 250px 0px;
   }
 
   #experience .section-content {
     padding-bottom: 50px;
+  }
+
+  .profile-img {
+    width: 250px;
+    height: 250px;
   }
 
   main section#contact .section-heading{
@@ -692,7 +701,11 @@ main section#experience .section-heading{
   }
 
   .experience-info {
-    margin: 25px 90px;
+    margin: 30px 65px;
+  }
+
+  #contact .section-heading {
+    top: 15%;
   }
 
 
