@@ -605,7 +605,7 @@ main section#experience .section-heading{
 
 #menu{
   z-index: 999;
-  top: 46px;
+  top: 10%;
   left: 12px;
   width: 40%;
   background: rgba(0,72,114,0.9);
