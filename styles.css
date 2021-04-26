@@ -299,6 +299,22 @@ footer a{
   }
 }
 
+/*CSS :MENU WEB/MOBILE */
+#menu-toggle{
+  display:none;
+}
+
+@media only screen and (max-width: 600px) {
+  #menu-toggle{
+    display:block;
+  }
+
+  #navbar{
+    display: none !important;
+  }
+}
+/*CSS :MENU WEB/MOBILE [END]*/
+
 /*PROFILE IMAGE*/
 .section-profile-img {
   position: relative;
@@ -561,3 +577,125 @@ main section#experience .section-heading{
   }
 }
 /* CSS: SOCIAL NETWORKS [END] */
+
+/*CSS: MENU MOBILE */
+#menu, .sub-menu {
+  display: none;
+  list-style: none;
+}
+
+.menu-mobile{
+  position: fixed;
+  background: rgba(0,72,114,0.9);
+  height: 14%;
+  width: 100%;
+  z-index: 999;
+}
+
+/*Change toggle size by adjusting width & height*/
+#menu-toggle, #menu{
+  position: fixed;
+}
+
+#menu-toggle{
+  top: 8px;
+  z-index: 999;
+  left: 15px;
+}
+
+#menu{
+  z-index: 999;
+  top: 46px;
+  left: 12px;
+  width: 40%;
+  background: rgba(0,72,114,0.9);
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 10px;
+}
+
+#menu a{
+  text-decoration: none;
+  color:#ddd;
+  transition: color 0.5s;
+}
+
+#menu a:hover{
+  color:#fff;
+}
+
+.tb-menu-toggle {
+  border: 0;
+  position: relative;
+  background: transparent;
+  cursor: pointer;
+}
+
+/*Change toggle color here*/
+.tb-menu-toggle i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  -webkit-transition:all .2s;
+   -moz-transition:all .2s;
+     -o-transition:all .2s;
+        transition:all .2s;
+}
+.tb-menu-toggle i:nth-child(2) {
+  top: 40%;
+}
+.tb-menu-toggle i:nth-child(3) {
+  top: 80%;
+}
+
+/* Style the active toggle here */
+.tb-menu-toggle.tb-active-toggle i {  }
+
+/*Animation of the toggle*/
+.tb-menu-toggle.tb-animate-toggle i:first-child,
+.tb-menu-toggle.tb-animate-toggle i:nth-child(2){ 
+  top: 40%;
+  -webkit-transform:rotate(45deg);
+   -moz-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+     -o-transform:rotate(45deg);
+        transform:rotate(45deg);
+} 
+.tb-menu-toggle.tb-animate-toggle i:nth-child(3){ 
+  top: 40%;
+  -webkit-transform:rotate(-45deg);
+   -moz-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+     -o-transform:rotate(-45deg);
+        transform:rotate(-45deg);
+}
+/*CSS: MENU MOBILE [END] */
+
+/*CSS: CHANGES MOBILE */
+@media only screen and (max-width: 600px) {
+  .section-profile-img{
+    margin: 45% 0% 70% 0%;
+  }
+
+  #experience .section-content {
+    padding-bottom: 50px;
+  }
+
+  main section#contact .section-heading{
+    width: 65%;
+  }
+
+  .experience-heading {
+    font-size: 1.2rem;
+  }
+
+  .experience-info {
+    margin: 25px 90px;
+  }
+
+
+}
+
+/*CSS: CHANGES MOBILE [END]*/
