@@ -1,295 +1,349 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <link rel="icon" href="./assets/favicon-portfolio.png" type="image/x-icon" />
-    <title>Igor Silveira</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="icon" href="./assets/favicon-portfolio.png" type="image/x-icon" />
+  <title>Igor Silveira</title>
 </head>
+
 <body>
 
-    <main>
-        <!--  MENU WEB  -->
-        <nav id="navbar">
-          <ul>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#experience">Experiência</a></li>
-            <li><a href="#contact">Contato</a></li>
-          </ul>
-        </nav>
-        <!--  MENU WEB [END] -->
+  <main>
+    <!--  MENU WEB  -->
+    <nav id="navbar">
+      <ul>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#experience">Experiência</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+    <!--  MENU WEB [END] -->
 
-        <!--  MENU MOBILE  -->
-        <div class="menu-mobile" >
-          <h3 id="menu-toggle">Menu</h3>
+    <!--  MENU MOBILE  -->
+    <div class="menu-mobile">
+      <h3 id="menu-toggle">Menu</h3>
+    </div>
+    <ul id="menu">
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#skills">Habilidades</a></li>
+      <li><a href="#projects">Projetos</a></li>
+      <li><a href="#experience">Experiência</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+    <!--  MENU MOBILE  [END] -->
+
+    <!--  SLIDER  -->
+    <section id="welcome-section">
+      <div class="welcome-img"></div>
+      <div class="placeholder-background"></div>
+      <div class="greeting">
+        <h1>Desenvolvedor Fullstack </h1>
+        <div class="social-networks">
+
+          <div class="network-linkedin">
+            <a href="https://www.linkedin.com/in/igor-zollim/" target="_blank">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="network-facebook">
+            <a href="https://www.facebook.com/igor.zollim/" target="_blank">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="network-instagram">
+            <a href="https://www.instagram.com/igor.zollim/" target="_blank">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="network-github">
+            <a href="https://github.com/igorzs" target="_blank">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="network-whatsapp">
+            <a href="https://api.whatsapp.com/send?phone=5551986526254&text=Ol%C3%A1%20Igor" target="_blank">
+              <i class="fa fa-whatsapp" aria-hidden="true"></i>
+            </a>
+          </div>
+
         </div>
-        <ul id="menu">
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#skills">Habilidades</a></li>
-          <li><a href="#projects">Projetos</a></li>
-          <li><a href="#experience">Experiência</a></li>   
-          <li><a href="#contact">Contato</a></li>         
-        </ul>
-        <!--  MENU MOBILE  [END] -->
+      </div>
+    </section>
+    <!--  SLIDER [END] -->
 
-        <!--  SLIDER  -->
-        <section id="welcome-section">
-          <div class="welcome-img"></div>
-          <div class="placeholder-background"></div>
-          <div class="greeting">
-            <h1>Desenvolvedor Fullstack </h1>
-            <div class="social-networks">
+    <!--  SOBRE MIM  -->
+    <section id="about">
+      <h1 class="section-heading">Quem sou?</h1>
+      <div class="section-content">
+        <p>
+          Olá! Me chamo Igor Silveira, estudante de Análise e Desenvolvimento de Sistemas pelo Instituto Federal do Rio
+          Grande do Sul.
+          <br />
+          <br />
+          Já atuei na construção de lojas virtuais, sites institucionais e para ensino à distância utilizando WordPress.
+          <br />
+          <br />
+          Atualmente, faço parte do time da Lydia Sistemas Inteligentes, propondo melhorias e automatizando processos
+          internos.
+        </p>
 
-              <div class="network-linkedin">
-                <a href="https://www.linkedin.com/in/igor-zollim/" target="_blank">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
+        <div class="section-profile-img">
+          <img src="./assets/avatar.jpg" class="profile-img" />
+        </div>
+
+      </div>
+    </section>
+    <!--  SOBRE MIM [END] -->
+
+    <!--  HABILIDADES  -->
+    <section id="skills">
+      <h1 class="section-heading">Habilidades</h1>
+      <div class="section-content skill-container">
+        <div class="skill">
+          <img class="php-skill" alt="php" src="./assets/php-skill.png">
+          <h2>PHP</h2>
+          <p>Desenvolvimento PHP e consumo de APIs (Vista Soft, Omie, One Signal, ect.)</p>
+        </div>
+        <div class="skill">
+          <img class="html-js-skill" alt="html-css-js" src="./assets/html-js-skill.png">
+          <h2>Frontend</h2>
+          <p>
+            Organização do layout e dados que retornam do Backend da aplicação.
+          </p>
+        </div>
+        <div class="skill">
+          <img class="wordpress-skill" alt="wordpress" src="./assets/wordpress-skill.png">
+          <h2>WordPress</h2>
+          <p>
+            Sites institucionais, lojas virtuais e sites para ensino a distância.
+          </p>
+        </div>
+        <div class="skill">
+          <img class="react-skill" alt="react" src="./assets/react-skill.png">
+          <h2>React</h2>
+          <p>
+            Aplicações híbridas com o auxílio do Node.js.
+          </p>
+        </div>
+        <div class="skill">
+          <img class="java-skill" alt="java" src="./assets/java-skill.png">
+          <h2>Java</h2>
+          <p>
+            Orientação a objetos.
+          </p>
+        </div>
+        <div class="skill">
+          <img class="node-skill" alt="node" src="./assets/node-skill.png">
+          <h2>Node.js</h2>
+          <p>
+            Backend baseado em JavaScript e Express.
+          </p>
+        </div>
+
+        <div class="skill">
+          <img class="azure-skill" alt="azure" src="./assets/azure.png">
+          <h2>Azure Cloud</h2>
+          <p>
+            Gerenciamento de máquinas virtuais e banco de dados.
+          </p>
+        </div>
+
+        <div class="skill">
+          <img class="chatbot-skill" alt="chatbot" src="./assets/chatbot.png">
+          <h2>Chatbots</h2>
+          <p>
+            Chatbots para WhatsApp com inteligência artificial.
+          </p>
+        </div>
+
+        <div class="skill">
+          <img class="crawling-skill" alt="crawling" src="./assets/crawling.png">
+          <h2>Web Crawling</h2>
+          <p>
+            Selenium + Php-webdriver.
+          </p>
+        </div>
+
+
+
+
+
+      </div>
+    </section>
+    <!--  HABILIDADES [END] -->
+
+
+
+    <!--  PORTFOLIO PROJETOS  -->
+    <section id="projects">
+      <h1 class="section-heading">Meus projetos</h1>
+      <div class="section-content project-container">
+        <p>
+          Aqui estão alguns projetos de ideias de clientes e trabalhos pessoais de estudo.
+        </p>
+
+        <div class="project">
+          <a href="https://gigamix.agr.br/" target="_blank">
+            <img src="./assets/gigamix-projects.png" alt="Gigamix" class="image-project">
+            <div class="overlay">
+              <div class="title-project">Gigamix</div>
+              <div class="desc-project">
+                WordPress
+                <br />
+                HTML/CSS/JS
               </div>
+            </div>
+          </a>
+        </div>
 
-              <div class="network-facebook">
-                <a href="https://www.facebook.com/igor.zollim/" target="_blank">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
+        <div class="project">
+          <a href="https://mudhai.com.br/" target="_blank">
+            <img src="./assets/mudhai-portfolio.png" alt="Mudhai" class="image-project">
+            <div class="overlay">
+              <div class="title-project">Mudhai</div>
+              <div class="desc-project">
+                PHP
+                <br />
+                WordPress
+                <br />
+                HTML/CSS/JS
               </div>
+            </div>
+          </a>
+        </div>
 
-              <div class="network-instagram">
-                <a href="https://www.instagram.com/igor.zollim/" target="_blank">
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
+        <div class="project">
+          <a href="https://github.com/igorzs/app-omnistack-be-the-hero" target="_blank">
+            <img src="./assets/be-the-hero-projects.png" alt="Be The Hero" class="image-project">
+            <div class="overlay">
+              <div class="title-project">Be The Hero</div>
+              <div class="desc-project">
+                Node.js
+                <br />
+                React.js
+                <br />
+                React Native
               </div>
+            </div>
+          </a>
+        </div>
 
-              <div class="network-github">
-                <a href="https://github.com/igorzs" target="_blank">
-                  <i class="fa fa-github" aria-hidden="true"></i>
-                </a>
+        <div class="project">
+          <a href="http://uniclinicas.net/" target="_blank">
+            <img src="./assets/uniclinicas-projects.png" alt="uniclinicas" class="image-project">
+            <div class="overlay">
+              <div class="title-project">Uniclinicas</div>
+              <div class="desc-project">
+                WordPress
+                <br />
+                HTML/CSS/JS
               </div>
+            </div>
+          </a>
+        </div>
 
-              <div class="network-whatsapp">
-                <a href="https://api.whatsapp.com/send?phone=5551986526254&text=Ol%C3%A1%20Igor" target="_blank">
-                  <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                </a>
+        <div class="project">
+          <a href="https://www.actionconsultoriarh.com.br/" target="_blank">
+            <img src="./assets/action-projects.png" alt="Action Consultoria" class="image-project">
+            <div class="overlay">
+              <div class="title-project">Action Consultoria</div>
+              <div class="desc-project">
+                PHP
+                <br />
+                WordPress
+                <br />
+                HTML/CSS/JS
               </div>
+            </div>
+          </a>
+        </div>
 
+        <div class="project">
+          <a href="https://sowgn.com.br/" target="_blank">
+            <img src="./assets/sowgn-projects.png" alt="SOW GN" class="image-project">
+            <div class="overlay">
+              <div class="title-project">SOW - Guria Natureba</div>
+              <div class="desc-project">
+                WordPress
+                <br />
+                HTML/CSS/JS
+              </div>
             </div>
-          </div>
-        </section>
-        <!--  SLIDER [END] -->
+          </a>
+        </div>
 
-        <!--  SOBRE MIM  -->
-        <section id="about">
-          <h1 class="section-heading">Quem sou?</h1>
-          <div class="section-content">
-            <p>
-              Me chamo Igor Zollim Silveira, estudante de Análise e Desenvolvimento de Sistemas pelo Instituto Federal do Rio Grande do Sul. No IFRS comecei a desenvolver aplicações web e mobile simples com Java no back-end e React.JS e React Native no front-end.
-              <br />
-              <br />
-              Atualmente, atuo na construção de lojas virtuais, sites institucionais ou para ensino à distância, aplicativos e softwares para gestão de Leads, clientes e fluxo de caixa utilizando SuiteCRM.
-            </p>
+      </div>
+    </section>
+    <!--  PORTFOLIO PROJETOS [END] -->
 
-          <div class="section-profile-img">
-            <img src="./assets/avatar.jpg" class="profile-img" />
-          </div>
+    <!--  BT GITHUB -->
+    <div class="github-projects">
+      <a href="https://github.com/igorzs" class="bt-portfolio" target="_blank">
+        <span>Ver mais</span>
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+    </div>
+    <!--  BT GITHUB [END] -->
 
-          </div>
-        </section>
-        <!--  SOBRE MIM [END] -->
+    <!--  EXPERIENCIA [END] -->
+    <section id="experience">
+      <h1 class="section-heading">Experiência</h1>
+      <div class="section-content">
+        <img src="./assets/orni-exp.jpg" />
+        <div class="experience-info">
+          <h1 class="experience-heading">Orni - Desenvolvimento e Marketing Digital Porto Alegre</h1>
+          <p>
+            Atuação no suporte técnico, desenvolvimento de sites institucionais, lojas virtuais com WordPress,
+            Woocommerce e PHP, sotfwares para gestão de leads e caixa utilizando SuiteCRM.
+            <br />
+            <br />
+            Responsável pela segurança e manutenção de servidores dedicados Linux e gestão de times ágeis com a
+            metodologia Scrum.
+          </p>
+        </div>
 
-        <!--  HABILIDADES  -->
-        <section id="skills">
-          <h1 class="section-heading">Habilidades</h1>
-          <div class="section-content skill-container">
-            <div class="skill">
-              <img class="php-skill" alt="php"  src="./assets/php-skill.png">
-              <h2>PHP</h2>
-              <p>Desenvolvimento PHP com o banco MySQL e funcionalidades como Split payment.</p>
-            </div>
-            <div class="skill">
-              <img class="html-js-skill" alt="html-css-js"  src="./assets/html-js-skill.png">
-              <h2>Frontend</h2>
-              <p>
-                Organização do layout e dados que retornam do Backend da aplicação.
-              </p>
-            </div>
-            <div class="skill">
-              <img class="wordpress-skill" alt="wordpress"  src="./assets/wordpress-skill.png">
-              <h2>WordPress</h2>
-              <p>
-                Sites institucionais, lojas virtuais e sites para ensino a distância.
-              </p>
-            </div>
-            <div class="skill">
-              <img class="react-skill" alt="react"  src="./assets/react-skill.png">
-              <h2>React</h2>
-              <p>
-                Aplicações híbridas com o auxílio do Node.js.
-              </p>
-            </div>
-            <div class="skill">
-              <img class="java-skill" alt="java"  src="./assets/java-skill.png">
-              <h2>Java</h2>
-              <p>
-                Orientação a objetos.
-              </p>
-            </div>
-            <div class="skill">
-              <img class="node-skill" alt="node"  src="./assets/node-skill.png">
-              <h2>Node.js</h2>
-              <p>
-                Backend baseado em JavaScript e Express.
-              </p>
-            </div>
-          </div>
-        </section>
-        <!--  HABILIDADES [END] -->
+
+        <div class="experience-info">
+          <h1 class="experience-heading">Lydia - Sistemas Inteligentes</h1>
+          <p>
+            Desenvolvimento de integrações com CRMs, manutenção de aplicações Voip Asterisk, Azure Cloud e propondo melhorias e automatizando processos internos.
+            <br />
+            <br />
+            Experiência com banco de dados relacional MySQL e Web Crawling com Selenium e PHP.
+          </p>
+        </div>
+        <img src="./assets/lydia.png" />
 
         
+      </div>
+    </section>
+    <!--  EXPERIENCIA [END] -->
 
-        <!--  PORTFOLIO PROJETOS  -->
-        <section id="projects">
-          <h1 class="section-heading">Meus projetos</h1>
-          <div class="section-content project-container">
-            <p>
-              Aqui estão alguns projetos de ideias de clientes e trabalhos pessoais de estudo.
-            </p>
-
-            <div class="project">
-              <a href="https://gigamix.agr.br/" target="_blank">
-                <img src="./assets/gigamix-projects.png" alt="Gigamix" class="image-project">
-                <div class="overlay">
-                  <div class="title-project">Gigamix</div>
-                  <div class="desc-project" >
-                    WordPress
-                    <br/>
-                    HTML/CSS/JS
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="project">
-              <a href="https://mudhai.com.br/" target="_blank">
-                <img src="./assets/mudhai-portfolio.png" alt="Mudhai" class="image-project">
-                <div class="overlay">
-                  <div class="title-project">Mudhai</div>
-                  <div class="desc-project" >
-                    PHP
-                    <br/>
-                    WordPress
-                    <br/>
-                    HTML/CSS/JS
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="project">
-              <a href="https://github.com/igorzs/app-omnistack-be-the-hero" target="_blank">
-                <img src="./assets/be-the-hero-projects.png" alt="Be The Hero" class="image-project">
-                <div class="overlay">
-                  <div class="title-project">Be The Hero</div>
-                  <div class="desc-project" >
-                    Node.js
-                    <br/>
-                    React.js
-                    <br/>
-                    React Native
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="project">
-              <a href="http://uniclinicas.net/" target="_blank">
-                <img src="./assets/uniclinicas-projects.png" alt="uniclinicas" class="image-project">
-                <div class="overlay">
-                  <div class="title-project">Uniclinicas</div>
-                  <div class="desc-project" >
-                    WordPress
-                    <br/>
-                    HTML/CSS/JS
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="project">
-              <a href="https://www.actionconsultoriarh.com.br/" target="_blank">
-                <img src="./assets/action-projects.png" alt="Action Consultoria" class="image-project">
-                <div class="overlay">
-                  <div class="title-project">Action Consultoria</div>
-                  <div class="desc-project" >
-                    PHP
-                    <br />
-                    WordPress
-                    <br/>
-                    HTML/CSS/JS
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="project">
-              <a href="https://sowgn.com.br/" target="_blank">
-                <img src="./assets/sowgn-projects.png" alt="SOW GN" class="image-project">
-                <div class="overlay">
-                  <div class="title-project">SOW - Guria Natureba</div>
-                  <div class="desc-project" >
-                    WordPress
-                    <br/>
-                    HTML/CSS/JS
-                  </div>
-                </div>
-              </a>
-            </div>
-
-          </div>
-        </section>
-        <!--  PORTFOLIO PROJETOS [END] -->
-
-        <!--  BT GITHUB -->
-        <div class="github-projects">
-          <a href="https://github.com/igorzs" class="bt-portfolio" target="_blank">
-            <span>Ver mais</span>
-            <i class="fa fa-github" aria-hidden="true"></i>
-          </a>
-        </div>
-        <!--  BT GITHUB [END] -->
-
-        <!--  EXPERIENCIA [END] -->
-        <section id="experience" >
-          <h1 class="section-heading">Experiência</h1>
-          <div class="section-content">
-            <img src="./assets/orni-exp.jpg" />
-            <div class="experience-info">
-              <h1 class="experience-heading">Orni - Desenvolvimento e Marketing Digital Porto Alegre</h1>
-              <p>
-                Atuação no suporte técnico, desenvolvimento de sites institucionais, lojas virtuais com WordPress, Woocommerce e PHP, sotfwares para gestão de leads e caixa utilizando SuiteCRM.
-                <br />
-                <br />
-                Responsável pela segurança e manutenção de servidores dedicados Linux e gestão de times ágeis com a metodologia Scrum.
-              </p>
-            </div>
-          </div>
-        </section>
-         <!--  EXPERIENCIA [END] -->
-
-        <!--  ENTRAR EM CONTATO -->
-        <section id="contact">
-          <h1 class="section-heading">Precisa de ajuda com seu projeto?</h1>
-          <a href="https://api.whatsapp.com/send?phone=5551986526254&text=Ol%C3%A1%20Igor" target="_blank" class="bt-whats" >
-            <img alt="Entrar em contato" src="./assets/bt-whats.png" >
-          </a>
-        </section>
-         <!--  ENTRAR EM CONTATO [END] -->
-      </main>
-      <footer><a href="https://github.com/igorzs" target="_blank" >Desenvolvido por Igor Silveira</a> <i class="fa fa-github" aria-hidden="true"></i></footer>
-      <script src="javascript.js"></script>
+    <!--  ENTRAR EM CONTATO -->
+    <section id="contact">
+      <h1 class="section-heading">Precisa de ajuda com seu projeto?</h1>
+      <a href="https://api.whatsapp.com/send?phone=5551986526254&text=Ol%C3%A1%20Igor" target="_blank" class="bt-whats">
+        <img alt="Entrar em contato" src="./assets/bt-whats.png">
+      </a>
+    </section>
+    <!--  ENTRAR EM CONTATO [END] -->
+  </main>
+  <footer><a href="https://github.com/igorzs" target="_blank">Desenvolvido por Igor Silveira</a> <i class="fa fa-github"
+      aria-hidden="true"></i></footer>
+  <script src="javascript.js"></script>
 </body>
+
 </html>
