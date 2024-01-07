@@ -1,7 +1,7 @@
-## 💻 Visão Geral:
-<p align="center">Site pessoal para acompanhar com detalhes projetos de ideias de clientes e trabalhos pessoais de estudo.</p>
+## 💻 Overview:
+<p align="center">Personal website to follow in detail projects of client ideas and personal study work.</p>
 
-<a href="https://igorzs.github.io/portfolio/" targert="_blank">Clique aqui para acessar</a>
+<a href="https://igorzs.github.io/portfolio/" targert="_blank">Click here to access</a>
 
 ---
 
@@ -12,5 +12,5 @@
 <a href="mailto:igorzollimsilveira@gmail.com"><img src="https://img.shields.io/badge/-igorzollimsilveira@gmail.com-2978b5?style=flat-square&logo=Gmail&logoColor=white&link=mailto:igorzollimsilveira@gmail.com"/></a>
 <a href="https://www.facebook.com/igor.zollim/"><img src="https://img.shields.io/badge/-Facebook-2978b5?style=flat-square&logo=Facebook&logoColor=white&link=https://www.facebook.com/igor.zollim/"/></a>
 <a href="https://www.instagram.com/igor.zollim/"><img src="https://img.shields.io/badge/-Instagram-2978b5?style=flat-square&logo=Instagram&logoColor=white&link=https://www.instagram.com/igor.zollim/"/></a>
-<a href="https://igorzs.github.io/portfolio/"><img src="https://img.shields.io/badge/-Acessar%20Portfolio-2978b5?style=flat-square&logo=github&logoColor=white&link=https://igorzs.github.io/portfolio/"/></a>
+<a href="https://igorzs.github.io/portfolio/"><img src="https://img.shields.io/badge/-Portfolio-2978b5?style=flat-square&logo=github&logoColor=white&link=https://igorzs.github.io/portfolio/"/></a>
 </p>
